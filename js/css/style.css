@@ -9,35 +9,12 @@
   --container: 1100px;
 }
 *{box-sizing:border-box}
-
-/* === Subtle Global Background Fix === */
 html, body {
   height: 100%;
-  margin: 0; 
-  background: linear-gradient(180deg, #081c3f 0%, #000814 100%)
+  margin: 0;
+  background: linear-gradient(180deg, #000814 0%, #001233 40%, #001f4d 100%);
   color: #ffffff;
   font-family: 'Poppins', Arial, sans-serif;
-}
-
-/* Make sections blend seamlessly with the body background */
-section, .section, .hero, .main, .page, .wrapper {
-  background: transparent !important;
-  transition: background 0.3s ease-in-out;
-}
-
-/* Keep cards, project boxes, etc. clean and readable */
-.card, .project-card, .content-box {
-  background: rgba(255, 255, 255, 0.96);
-  color: #111;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  padding: 18px;
-}
-
-/* Slight transparency for navbar */
-.navbar, .nav {
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(6px);
 }
 
 
