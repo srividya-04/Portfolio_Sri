@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bellamkonda Sri Vidya — Portfolio</title>
+  <meta name="description" content="Portfolio of Bellamkonda Sri Vidya — Aspiring Data Scientist" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero">BELLAMKONDA SRIVIDYA</a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="btn-outline" href="resume.pdf" download>Download Resume</a>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero container">
+      <div class="hero-left">
+        <h1>Bellamkonda <span class="accent">Sri Vidya</span></h1>
+        <p class="tagline">Aspiring Data Scientist · Machine Learning Enthusiast · Fresher</p>
+        <p class="lead">I am an early-career data scientist with internship experience and research in medical ML. I focus on building reproducible pipelines, clear visualizations, and delivering actionable insights.</p>
+        <ul class="contact-line">
+          <li><strong>Phone:</strong> +91 99498 22278</li>
+          <li><strong>Email:</strong> <a href="mailto:srividyabellamkonda04@gmail.com">srividyabellamkonda04@gmail.com</a></li>
+        </ul>
+        <div class="hero-ctas">
+          <a class="btn-primary" href="#projects">View Projects</a>
+          <a class="btn-secondary" href="https://www.linkedin.com/in/sri-vidya-180643240" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="images/profile.png" alt="Bellamkonda Srividya" class="avatar-img" width="220" height="220">
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>About Me</h2>
+      <p>I completed a Data Science internship at Prodigy Infotech where I worked on data cleaning, exploratory data analysis, and building baseline machine learning models. I am the author of the paper <strong>"Predicting Throat Cancer: An Ensemble Methodology for Improved Accuracy"</strong>, presented at ICCISS'25. I enjoy applying ML to solve practical problems and communicating results clearly.</p>
+      <ul class="quick-info">
+        <li><strong>Education:</strong> B.Tech Computer Science — Vardhaman College of Engineering (CGPA: 8.5/10)</li>
+        <li><strong>Current:</strong> Pursuing Master’s in Education</li>
+        <li><strong>Location:</strong> Hyderabad, Telangana, India</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="container section">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <span class="skill">Python</span>
+        <span class="skill">Pandas</span>
+        <span class="skill">NumPy</span>
+        <span class="skill">scikit-learn</span>
+        <span class="skill">TensorFlow / Keras</span>
+        <span class="skill">SQL (MySQL)</span>
+        <span class="skill">Git & GitHub</span>
+        <span class="skill">Data Visualization</span>
+        <span class="skill">Cloud: AWS, GCP</span>
+      </div>
+    </section>
+
+    <section id="projects" class="container section">
+      <h2>Selected Projects</h2>
+      <div class="projects-grid">
+        <article class="card">
+          <h3>Fake Review Detection</h3>
+          <p class="card-desc">Developed a text-classification pipeline using TF-IDF and Logistic Regression to identify fraudulent product reviews. Implemented data preprocessing, feature engineering, and model evaluation. Reported results include strong detection performance on sample datasets.</p>
+          <ul class="project-bullets">
+            <li>Frameworks: Python, scikit-learn, Pandas</li>
+            <li>Impact: Identified and removed >10,000 fraudulent reviews in a production-like scenario; reported detection accuracy up to 95% (project metric).</li>
+            <li>Artifacts: `projects/fake_review/train_text_model.py`, sample dataset `projects/fake_review/sample_reviews.csv`</li>
+          </ul>
+          <a class="card-link" href="projects/fake_review/README.md">Project details & code</a>
+        </article>
+
+        <article class="card">
+          <h3>Throat Cancer Prediction</h3>
+          <p class="card-desc">Research-focused project building ensemble models (Random Forest, Gradient Boosting) to predict early throat cancer using clinical features. Performed feature engineering, model selection, and evaluation.</p>
+          <ul class="project-bullets">
+            <li>Frameworks: Python, scikit-learn, Pandas</li>
+            <li>Approach: Ensemble learning and careful preprocessing to improve robustness.</li>
+            <li>Artifacts: `projects/throat_cancer/train_model.py`, sample CSV `projects/throat_cancer/sample_data.csv`</li>
+          </ul>
+          <a class="card-link" href="projects/throat_cancer/README.md">Project details & code</a>
+        </article>
+
+        <article class="card">
+          <h3>Portfolio Website</h3>
+          <p class="card-desc">This responsive portfolio site showcasing projects, resume, and contact information. Ready for GitHub Pages deployment.</p>
+          <p class="tech">Tech: HTML · CSS · JavaScript</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="container section">
+      <h2>Education</h2>
+      <p><strong>Vardhaman College of Engineering</strong> — B.Tech Computer Science (CGPA: 8.5/10).<br>Krishnaveni Vikas Junior College — Higher Secondary (CGPA: 9.6/10).</p>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Contact</h2>
+      <p class="muted">Open to internships and full-time entry-level roles in data science and machine learning. You can download my resume or reach me directly via email or LinkedIn.</p>
+      <form id="contact-form" class="contact-form" onsubmit="submitContact(event)">
+        <label>
+          <span>Your name</span>
+          <input type="text" id="name" placeholder="Your full name" required>
+        </label>
+        <label>
+          <span>Your email</span>
+          <input type="email" id="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea id="message" placeholder="Brief message (2-3 lines)" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Send</button>
+          <button type="reset" class="btn-outline">Reset</button>
+        </div>
+        <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Bellamkonda Sri Vidya — Aspiring Data Scientist</p>
+      <nav class="social">
+        <a href="https://github.com/srividya-04" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/sri-vidya-180643240" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:srividyabellamkonda04@gmail.com">Email</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
