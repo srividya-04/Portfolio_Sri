@@ -13,8 +13,8 @@
 /* === Subtle Global Background Fix === */
 html, body {
   height: 100%;
-  margin: 0;
-  background: linear-gradient(180deg, #0a3cff 0%, #001f4d 100%); /* smooth dark blue gradient */
+  margin: 0; 
+  background: linear-gradient(180deg, #081c3f 0%, #000814 100%)
   color: #ffffff;
   font-family: 'Poppins', Arial, sans-serif;
 }
