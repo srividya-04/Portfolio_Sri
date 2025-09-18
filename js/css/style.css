@@ -9,7 +9,19 @@
   --container: 1100px;
 }
 *{box-sizing:border-box}
-html,body{height:100%}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(180deg, #0b5fff 0%, #0a4ee6 100%); /* Blue gradient */
+  color: #ffffff;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Make all sections transparent so body background shows */
+section, .section, .hero, .main, .page, .wrapper {
+  background: transparent !important;
+}
 
 body{
   margin:0;
@@ -21,7 +33,7 @@ body{
   line-height:1.6;
   padding: 20px;
 }
-.container{max-width:var(--container);margin:0 auto;padding:24px}
+.container{background: transparent;}
 .site-header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(6px);background:linear-gradient(180deg, rgba(2,6,23,0.6), rgba(2,6,23,0.4));border-bottom:1px solid rgba(255,255,255,0.03);z-index:40}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 24px}
 .brand{font-weight:700;color:var(--text);text-decoration:none}
@@ -46,7 +58,7 @@ body{
 .contact-line li{font-size:0.95rem}
 
 /* Sections */
-.section{padding:40px 24px;border-top:1px solid rgba(255,255,255,0.02)}
+.section{background: transparent;}
 .section h2{font-size:1.25rem;margin:0 0 14px}
 .muted{color:var(--muted)}
 .quick-info{list-style:none;padding:0;margin:12px 0 0;color:var(--muted)}
