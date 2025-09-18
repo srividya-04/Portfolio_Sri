@@ -10,33 +10,33 @@
 }
 *{box-sizing:border-box}
 
-/* === Subtle Professional Background Fix === */
+/* === Subtle Global Background Fix === */
 html, body {
   height: 100%;
   margin: 0;
-  background: linear-gradient(180deg, #0a3cff 0%, #001f4d 100%); /* Smooth dark-to-deep blue gradient */
+  background: linear-gradient(180deg, #0a3cff 0%, #001f4d 100%); /* smooth dark blue gradient */
   color: #ffffff;
   font-family: 'Poppins', Arial, sans-serif;
 }
 
-/* Make all sections blend with body background */
+/* Make sections blend seamlessly with the body background */
 section, .section, .hero, .main, .page, .wrapper {
   background: transparent !important;
   transition: background 0.3s ease-in-out;
 }
 
-/* Keep cards and content boxes readable */
+/* Keep cards, project boxes, etc. clean and readable */
 .card, .project-card, .content-box {
-  background: rgba(255, 255, 255, 0.96); /* clean white */
+  background: rgba(255, 255, 255, 0.96);
   color: #111;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 18px;
 }
 
-/* Navbar with slight transparency */
+/* Slight transparency for navbar */
 .navbar, .nav {
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(6px);
 }
 
